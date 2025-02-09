@@ -1,4 +1,3 @@
-#devgaganin
 import asyncio
 import time
 import os
@@ -49,7 +48,7 @@ collection = db[COLLECTION_NAME]
 
 if STRING:
     from devgagan import pro
-    print("App imported from devgagan.")
+    print("App imported from Rajesh.")
 else:
     pro = None
     print("STRING is not available. 'app' is set to None.")
@@ -76,7 +75,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
         else:
             chat = msg_link.split("/")[-2]
         if chat in saved_channel_ids:
-            await app.edit_message_text(message.chat.id, edit_id, "Sorry! dude 😎 This channel is protected 🔐 by **__Team SPY__**")
+            await app.edit_message_text(message.chat.id, edit_id, "Sorry! dude 😎 This channel is protected 🔐 by **__@rajrmahar__**")
             return
             
         file = ""
@@ -415,7 +414,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                             thumb=thumb_path,
                             progress=progress_bar,
                             progress_args=(
-                                "╭─────────────────────╮\n│      **__Pyro Uploader__**\n├─────────────────────",
+                                "╭─────────────────────╮\n│      **__File is Uploading__**\n├─────────────────────",
                                 edit,
                                 time.time()
                             )
@@ -458,7 +457,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                             thumb=thumb_path,
                             progress=progress_bar,
                             progress_args=(
-                                "╭─────────────────────╮\n│      **__Pyro Uploader__**\n├─────────────────────",
+                                "╭─────────────────────╮\n│      **__File is Uploading__**\n├─────────────────────",
                                 edit,
                                 time.time()
                             )
@@ -653,8 +652,8 @@ async def set_rename_command(user_id, custom_rename_tag):
 
 # Function to get the user's custom renaming preference
 def get_user_rename_preference(user_id):
-    # Retrieve the user's custom renaming tag if set, or default to 'Team SPY'
-    return user_rename_preferences.get(str(user_id), 'Team SPY')
+    # Retrieve the user's custom renaming tag if set, or default to 'Rajesh R Mahar'
+    return user_rename_preferences.get(str(user_id), 'Rajesh R Mahar')
 
 # Function to set custom caption preference
 async def set_caption_command(user_id, custom_caption):
@@ -682,7 +681,7 @@ async def settings_command(event):
         [Button.inline("Session Login", b'addsession'), Button.inline("Logout", b'logout')],
         [Button.inline("Set Thumbnail", b'setthumb'), Button.inline("Remove Thumbnail", b'remthumb')],
         [Button.inline("Upload Method", b'uploadmethod')],
-        [Button.url("Report Errors", "https://t.me/team_spy_pro")]
+        [Button.url("Report Errors", "https://t.me/rajrmahar")]
     ]
     
     await gf.send_file(
@@ -961,7 +960,7 @@ def progress_callback(done, total, user_id):
     # Format the final output as needed
     final = (
         f"╭──────────────────╮\n"
-        f"│     **__SpyLib ⚡ Uploader__**       \n"
+        f"│     **__File is Uploading__**       \n"
         f"├──────────\n"
         f"│ {progress_bar}\n\n"
         f"│ **__Progress:__** {percent:.2f}%\n"
@@ -969,7 +968,7 @@ def progress_callback(done, total, user_id):
         f"│ **__Speed:__** {speed_mbps:.2f} Mbps\n"
         f"│ **__ETA:__** {remaining_time_min:.2f} min\n"
         f"╰──────────────────╯\n\n"
-        f"**__Powered by Team SPY__**"
+        f"**__Powered by Rajesh Mahar__**"
     )
     
     # Update tracking variables for the user
