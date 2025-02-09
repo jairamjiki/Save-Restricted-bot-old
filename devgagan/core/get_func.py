@@ -320,7 +320,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                             duration=duration,
                             progress=progress_bar,
                             progress_args=(
-                                "╭─────────────────────╮\n│      **__Pyro Uploader__**\n├─────────────────────",
+                                "╭─────────────────────╮\n│      **__File is Uploading__**\n├─────────────────────",
                                 edit,
                                 time.time()
                             )
